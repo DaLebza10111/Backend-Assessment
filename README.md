@@ -14,3 +14,6 @@
 - PHP 8.1 or higher.
 - Laravel 10.x or higher.
 - Composer.
+
+## Setup Instructions
+- Clone the Repository: git clone 
