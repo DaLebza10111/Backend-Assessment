@@ -30,7 +30,7 @@ class runBackgroundJob extends Command
     public function handle()
     {
         // Get the command-line arguments and options
-        $classname = $this->argument('class');
+        $className = $this->argument('class');
         $method = $this->argument('method');
         $params = $this->option('params') ? json_decode($this->option('params'), true) : [];
 
