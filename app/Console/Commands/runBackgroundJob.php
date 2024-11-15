@@ -14,5 +14,10 @@ class runBackgroundJob extends Command
     public function handle()
     {
         $classname = $this->argument('class');
+        $method = $this->argument('method');
+        $params = json_decode($this->option('params'), true)? : [];
+
+        $runner = new BackgroundJobRunner();
+        $runner->runJob($className, $method, $params);
     }
 }
