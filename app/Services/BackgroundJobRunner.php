@@ -7,9 +7,15 @@ use Illuminate\Support\Facades\Log;
 
 class BackgroundJobRunner
 {
-    public function runJob($className, $method, $params = [])
+    public function runJob($className, $method, $params = [], $delay=0)
     {
         try {
+
+            if ($delay > 0) {
+
+                sleep($delay);
+
+            }
 
             $params = is_array($params) ? $params : [];
 
