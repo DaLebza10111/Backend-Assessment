@@ -10,6 +10,9 @@ class BackgroundJobRunner
     public function runJob($className, $method, $params = [])
     {
         try {
+
+            $params = is_array($params) ? $params : [];
+
             if (!class_exists($className) || !method_exists($className, $method)) {
                 throw new Exception("Invalid class or method.");
             }
