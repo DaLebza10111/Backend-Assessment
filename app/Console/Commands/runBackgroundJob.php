@@ -3,28 +3,16 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Services\BackgroundJobRunner;
 
 class runBackgroundJob extends Command
 {
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'app:run-background-job';
 
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
-    protected $description = 'Command description';
+    protected $signature = 'job:run {class} {method} {--params=}';
+    protected $description = 'Runs background tasks';
 
-    /**
-     * Execute the console command.
-     */
     public function handle()
     {
-        //
+        $classname = $this->argument('class');
     }
 }
