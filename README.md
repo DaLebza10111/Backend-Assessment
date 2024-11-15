@@ -36,3 +36,6 @@
   
 ## Start the Server:
 - Run "php artisan serve"
+
+# EXAMPLE COMMAND:
+[Paste this on CMD] php artisan job:run "App\Services\ExampleJob" "execute" --params='["Hello World"]' --delay=5
