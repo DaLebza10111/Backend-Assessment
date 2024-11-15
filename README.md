@@ -16,4 +16,5 @@
 - Composer.
 
 ## Setup Instructions
-- Clone the Repository: git clone 
+- Clone the Repository: git clone https://github.com/DaLebza10111/Backend-Assessment.git
+- Using [Command Prompt or CMD], run "composer install"
