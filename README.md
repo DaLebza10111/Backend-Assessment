@@ -10,11 +10,16 @@
 - Retry Mechanism: Configurable retry attempts for failed jobs.
 - Web Dashboard: View active jobs, logs, and cancel running jobs.
 
-  # Requirements
+  # Requirements:
 - PHP 8.1 or higher.
 - Laravel 10.x or higher.
 - Composer.
 
 ## Setup Instructions
 - Clone the Repository: git clone https://github.com/DaLebza10111/Backend-Assessment.git
-- Using [Command Prompt or CMD], run "composer install"
+- Using [Command Prompt or CMD], run "composer install".
+
+
+   ### Configurre the Environment:
+  - Using [Command Prompt or CMD], run "cp .env.example .env".
+
